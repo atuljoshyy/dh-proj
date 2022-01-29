@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lab As-1</title>
 </head>
 
@@ -20,19 +21,25 @@
                 <div class="nav-link">
                     <a href="#">Home</a>
                 </div>
-                <div class="nav-link">
-                    <a href="#">Courses Offered</a>
+                <div class="nav-link dropdown">
+                    <a href="#" class="dropbtn">Courses Offered</a>
+                    <div class="dropdown-content">
+                        <a href="">B-tech</a>
+                        <a href="">M-tech</a>
+                        <a href="">Integrated</a>
+                        <a href="">LLB</a>
+                        <a href="">MBA</a>
+                    </div>
                 </div>
                 <div class="nav-link">
-                    <a href="#">Cultural Activities</a>
+                    <a href="#cultural">Cultural Activities</a>
                 </div>
                 <div class="nav-link">
-                    <a href="#">Faculty</a>
+                    <a href="#faculty">Faculty</a>
                 </div>
             </div>
 
         </nav>
-        <!-- ==========NAVBAR ENDS========== -->
         <!-- ==========HERO SECTION========== -->
         <section class='hero section'>
             <div class="hero-text">
@@ -145,14 +152,15 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <video src="https://www.youtube.com/watch?v=6fNTdBEX3Vo">Cultural Events</video>
+            <div id="cultural">
+                <h2>Cultural Events</h2>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/lnLs86XGJSM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section>
             <h2>Faculty</h2>
 
-            <table id="customers">
+            <table id="faculty">
                 <tr>
                     <th>Name</th>
                     <th>Department</th>
@@ -187,13 +195,18 @@
         </section>
         <section>
             <h2>Ranking and Accredition</h2>
-            <p>Vellore Institute of Technology (VIT) has emerged as one of the best institutes of India and is aspiring to become a global leader. Quality in teaching-learning, research and innovation makes VIT unique. The office of the ranking and accreditation (RAAC) prepares the strategic plan and sets goal to improve institutional ranking every year. VIT is the 12th best research and the 12th best Engineering institution of India in 2021 NIRF Ranking published by the Ministry of Education, Govt. of India. National Assessment and Accreditation Council (NAAC) has accredited VIT with the highest grade A++ in 2021 (4th cycle). Vellore Institute of Technology (VIT) has been recognized as an Institution of Eminence by Government of India.</p>
+            <p>Vellore Institute of Technology (VIT) has emerged as one of the best institutes of India and is aspiring
+                to become a global leader. Quality in teaching-learning, research and innovation makes VIT unique. The
+                office of the ranking and accreditation (RAAC) prepares the strategic plan and sets goal to improve
+                institutional ranking every year. VIT is the 12th best research and the 12th best Engineering
+                institution of India in 2021 NIRF Ranking published by the Ministry of Education, Govt. of India.
+                National Assessment and Accreditation Council (NAAC) has accredited VIT with the highest grade A++ in
+                2021 (4th cycle). Vellore Institute of Technology (VIT) has been recognized as an Institution of
+                Eminence by Government of India.</p>
             <br>
             <h3>Rate the university</h3>
             <br>
             <div>
-                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -203,21 +216,17 @@
         </section>
         <section>
             <h2>Give us your Feedback</h2>
-            <div class="container1">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your name..">
-              
-                  <label for="mail">Email Address</label>
-                  <input type="email" id="mail" name="email" placeholder="Your email..">
-                  <label for="subject">Feedback</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
-              
+            <div class="form-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="email" placeholder="Your email..">
+                <label for="subject">Feedback</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:10px"></textarea>
+                <input type="submit" value="Submit">
                 </form>
-              </div>
+            </div>
         </section>
-
     </div>
     <div>
 

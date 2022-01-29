@@ -4,19 +4,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .main-container{
     font-family: 'Poppins', sans-serif;
 }
 
 nav{
-    max-width: 80%;
+  position: fixed;
+  width: 100%;
     margin: auto;
     display:flex;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 20px 30px;
     align-items: center;
     background: rgb(255, 255, 255);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     
 }
 
@@ -152,22 +155,22 @@ section{
   .user-info small {
     color: #545d7a;
   }
-  #customers {
+  #faculty {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
   
-  #customers td, #customers th {
+  #faculty td, #faculty th {
     border: 1px solid #ddd;
     padding: 8px;
   }
   
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  #faculty tr:nth-child(even){background-color: #f2f2f2;}
   
-  #customers tr:hover {background-color: #ddd;}
+  #faculty tr:hover {background-color: #ddd;}
   
-  #customers th {
+  #faculty th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -208,8 +211,46 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: black;
 }
-.container1 {
+.form-container {
   border-radius: 15px;
   background-color: #f2f2f2;
   padding: 20px;
+  max-width: 50%;
+}
+.dropbtn{
+  background: white;
+  color: black;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background: #e2e2e2;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dropdown-content a{
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown-content a:hover{
+  background: rgb(105, 195, 255);
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
 }
